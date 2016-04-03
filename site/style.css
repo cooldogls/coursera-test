@@ -1,0 +1,74 @@
+/********* Base Style **********/
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+h1{
+	text-align: center;
+	padding: 10px;
+	font-family: arial,serif;
+}
+#div1, #div2, #div3{
+	float:left;
+}
+
+.section{
+	background: #eeeeee;
+	margin: 0px 10px 10px 0px;	
+	border: 1px solid #555555;
+}
+
+.item{
+	float: right;
+	background: #C24A27;
+	position: relative;
+	top: 0px;
+	right: 0px;
+	padding: 5px;
+	margin: 0px 0px 10px 0px;
+	border-bottom: 1px solid #555555;
+	border-left: 1px solid #555555;
+	font-size: 1.3em;
+	font-family: arial, serif;
+	color: white;
+}
+
+#item2{
+	background:#0081C9;
+}
+
+#item3{
+	background:#7AC5CD;
+}
+
+.p_text{
+	clear: both;
+	margin: 20px 10px;
+}
+
+/********* Desktop View **********/
+@media (min-width:992px){
+	#div1, #div2, #div3 {
+		width: 33.33%;
+	}
+	
+}
+/********* Tablet View **********/
+@media (min-width:768px) and (max-width:991px){
+	#div1, #div2 {
+		width: 50%;
+	}
+
+	#div3 {
+		width: 100%;
+	}
+	
+}
+/********* Mobile View **********/
+@media (max-width:767px){
+	#div1, #div2, #div3 {
+		width: 100%;
+	}
+	
+}
